@@ -1,0 +1,68 @@
+body {
+  font-family: "Open-sans", "sans-serif";
+  text-align: center;
+  margin: 0;
+}
+
+#hero {
+  width: 592px;
+  /*margem: ^     >     v    < */
+  margin: 0 auto 72px;
+}
+
+#hero img {
+  width: 348px;
+  height: 223px;
+}
+
+#balls {
+  width: 99px;
+  height: 88px;
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+}
+
+h1 {
+  font-family: "Inter", "sans-serif";
+  font-size: 49px;
+  line-height: 56px;
+  font-weight: normal;
+
+  margin-top: 72px;
+  margin-bottom: 32px;
+}
+
+h1 span {
+  font-weight: bold;
+}
+
+span,
+a {
+  color: #ff9900;
+}
+p {
+  font-family: Open Sans;
+  color: #7d7987;
+  font-size: 14px;
+  line-height: 28px;
+
+  margin-bottom: 72px;
+}
+
+#footer {
+  font-size: 14px;
+  line-height: 28px;
+  font-family: Open Sans;
+}
+
+/* pega um <a> que anterior a ele tem um <a>*/
+#footer a + a {
+  margin-left: 28px;
+}
+.line {
+  width: 568px;
+  height: 0px;
+  margin: 0 auto 8px;
+  border: 1px solid #eceff2;
+}
