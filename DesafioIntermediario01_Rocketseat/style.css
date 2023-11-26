@@ -1,0 +1,77 @@
+title{
+    background: url(images/Favicon.png);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    
+}
+
+img{
+    width: 350px;
+    height: 238px;
+    margin-top:64px;
+    margin-bottom: 32px;
+    
+}
+
+h1{
+    margin-bottom: 16px;
+    font-family: Dosis;
+    font-size: 32px;
+    color: #3F3D56;
+}
+
+h1 strong{
+    color: #ee24ff;
+}
+strong{
+    color: #3F3D56;
+}
+
+p{
+    width: 540px;
+    text-align: center;
+    margin: 16px auto 32px;
+    font-family: "Open Sans";
+    font-size: 15px;
+    color: #828282;
+}
+
+.line{
+    width: 391px;
+    margin: 64px auto 16px;
+    border: 1px solid #ECEFF2;
+}
+
+ul li{
+    list-style: none;
+    font-family: "Open Sans";
+}
+
+ul{
+    
+}
+li{
+    display: inline;
+    color: #3F3D56;
+   
+}
+
+li #Destinos, #Ofertas, #Contato{
+    margin-left: 42px;
+}
+
+
+#links{
+    margin-top: 16px;
+}
+
+#footer img{
+    width: 100%;
+    position: fixed;
+    left: 0;
+    
+}
