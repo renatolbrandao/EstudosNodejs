@@ -1,0 +1,253 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body::before{
+    content: '';
+    width: 100%;
+    height: 465px;
+    background: #293241;
+    position: absolute;
+    top:0;
+    left: 0;
+    z-index: -1;
+}
+
+
+body{
+    background: #BFD7E4;
+    margin: 0 auto;
+
+    align-items: center;
+    font-family: 'Staatliches';
+}
+
+header{
+    text-align: center;
+    margin-top: 107px;
+    color: #fff;
+}
+
+header > h1{
+    font-family: 'Staatliches';
+    font-size: 36px;
+    font-weight: normal;
+}
+
+header > p{
+    font-family: 'Poppins';
+    font-size: 16px;
+    text-align: center;
+    margin: auto;
+    width: 391px;
+    height: 46px;
+}
+
+header > img{
+    width: 225px;
+    height: 100px;
+    margin-bottom: 32px;
+}
+
+header > legend{
+    
+    font-family: 'Staatliches';
+    font-size: 24px;
+    line-height: 34px;
+
+    width: 750px;
+    height: 130px;
+    
+    border-radius: 20px 20px 0 0;
+    background: #f67669;
+    
+    margin: 0 auto;
+    padding: 50px;
+}
+
+form{
+    background: #fff;
+
+    width: 750px;
+    height: 1075px;
+
+    margin: 0 auto;
+    padding: 64px;
+
+    border-radius: 0 0 20px 20px;
+}
+
+span{
+    color: #C1BCCC;
+
+    font-size: 12px;
+    line-height: 20px;
+    font-family: 'Poppins';
+}
+fieldset{
+    border: none;
+}
+
+.input-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    font-family: 'Poppins';
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.input-wrapper input{
+    border-radius: 8px;
+
+    border: 1px solid #E6E6F0;
+    background: #fafafc;
+
+    padding: 6px;
+}
+
+.col-2{
+    display: flex;
+    gap: 22px;
+    margin-bottom: 47px;
+}
+
+.input-wrapper #info-name, .input-wrapper #info-lastname{
+    width: 300px;
+    height: 55px;
+}
+
+.input-wrapper #info-email{
+    width: 622px;
+    height: 55px;
+    margin-bottom: 31px;
+}
+
+.fieldset-wrapper legend{
+    text-align: center;
+    font-size: 24px;
+    line-height: 34px;
+    color: #253B51
+}
+
+.line{
+    border-bottom: 1px solid #E6E6F0;
+    margin-bottom: 32px;
+}
+
+.input-wrapper #mentor-name{
+    width: 300px;
+    height: 55px;
+
+    border: 1px solid #E6E6F0;
+    border-radius: 8px;
+    background: #fafafc;
+
+    margin-bottom: 32px;
+
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+.textarea-wrapper #mentor-feedback{
+    width: 608px;
+    height: 166px;
+
+    border: 1px solid #E6E6F0;
+    border-radius: 8px;
+    background: #fafafc;
+
+    margin-bottom: 29px;
+}
+
+.checkbox-wrapper{
+    position: relative;
+}
+
+
+.checkbox-wrapper input{
+    width: 24px;
+    height: 24px;
+
+    border: 1px solid #E6E6F0;
+    border-radius: 8px;
+    background: #fafafc;
+
+    position: absolute;
+    top:0;
+    left: 0;
+    padding: 1px;
+
+    opacity: 0;
+
+}
+
+.checkbox-wrapper label{
+    margin: 0;  
+    display: flex;
+    align-items: center;
+    gap: 16px;
+        
+    margin-bottom: 36px;
+}
+
+.checkbox-wrapper label::before{
+    content: '';
+    width: 24px;
+    height: 24px;
+
+    border: 1px solid #E6E6F0;
+    border-radius: 8px;
+    background: #FAFAFC;
+
+}
+
+.checkbox-wrapper input:checked + label::before{
+    background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_2419_23)'%3E%3Cpath d='M9 16.17L4.83 12L3.41 13.41L9 19L21 7L19.59 5.59L9 16.17Z' fill='%2342D3FF'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_2419_23'%3E%3Crect width='24' height='24' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+}
+
+.col-3{
+    display: flex;
+    gap:32px;
+}
+
+.input-wrapper #date-mentoria{
+    width: 300px;
+    height: 55px;
+    appearance: none;
+}
+
+.input-wrapper #begin-time, .input-wrapper #end-time{
+    width: 140px;
+    height: 55px;
+    
+}
+
+.group-time{
+    display: flex;
+    gap: 10px;
+}
+
+#button-submit{
+    width: 622px;
+    height: 51px;
+    
+    margin: 63px auto;
+    padding: 15px 40px;
+    
+    align-items: center;
+
+    font-family: 'Staatliches';
+    font-size: 20px;
+    line-height: 26px;
+    color: #fff;
+
+    background: #F67669;
+    
+    border-radius: 8px;
+    border:none;
+}
