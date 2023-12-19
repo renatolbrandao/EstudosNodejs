@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.grid{
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 8px;
+
+    /* utiliza o eixo y
+    align-content: space-evenly;
+    /* utiliza o eixo x 
+    justify-content: space-evenly;
+    /* utiliza tanto o eixo X quanto o Y 
+    place-content: center; */
+
+    /* align-items: end;
+    justify-items: start;
+    place-items: start; */
+
+    background-color: black;
+}
+
+.grid > div{
+    background-color: cornflowerblue;
+}
+
+.grid div:nth-child(2){
+    align-self: center;
+    justify-self: end;
+    place-self: center;
+}
