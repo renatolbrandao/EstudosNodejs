@@ -1,0 +1,282 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+:root{
+    font-size: 62.5%;
+
+    --color-background-header: hsl(195, 91%, 25%);
+    --color-background-footer: hsl(195, 46%, 40%);
+    --color-text-white: hsl(0, 0%, 100%);
+    --color-button-like: hsl(195, 91%, 25%);
+
+    --imagem-botao-dislike: "./assets/deslikeIcon.svg";
+}
+
+.page{
+    display: grid;
+    /* grid-template-rows: max-content 1fr 1fr 1fr 1fr; */
+    
+    width: 43rem;
+    /* height: 100vh; */
+
+    margin: 0 auto;
+
+}
+
+html, body, input{
+    font-family: 'Mulish';
+}
+
+
+header{
+    display: flex;
+    padding: 1.2rem 2.8rem;
+    height: 7.2rem;
+    width: 43rem;
+    background-color: var(--color-background-header);
+    color: var(--color-text-white);
+}
+
+#menu{
+    width: 37.4rem;
+    height: 4.8rem;
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+    color: var(--color-text-white);
+}
+
+.logo > img{
+    border: 1px solid white;
+    border-radius: 50%;
+    background-color: var(--color-text-white);
+    
+    width: 4.0rem;
+    height: 4.0rem;
+
+    padding: 0.8rem;
+
+}
+
+.input-wrapper label{
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+}
+
+.input-wrapper input{
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
+    width: 24.1rem;
+    height: 1.6rem;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+    
+}
+
+.input-wrapper input::placeholder{
+    text-align: right;
+    color: var(--color-text-white);
+    font-size: 1.6rem;
+    
+}
+
+
+#buscaArtigos{   
+    padding-left: 1.2rem;
+    border-radius: 0.4rem;
+    border: none;
+    height: auto;
+    
+    background: rgba(255, 255, 255, 0.20);
+}
+
+#portrait{
+    width: 4.2rem;
+    height: 4.2rem;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+#thumbnail{
+    /* width: 100%; */
+    object-fit: cover;
+    margin-bottom: 3.1rem;
+}
+
+main{
+    padding: 0 2.6rem 0 2.2rem;
+}
+
+section > p{
+    width: 38.2rem;
+}
+
+section{
+    margin-bottom: 3.2rem;
+}
+
+h2{
+    display: block;
+    margin-bottom: 0.8rem;
+}
+
+#botaoAvaliacao{
+    gap: 12px;
+    display: flex;
+    
+    align-items: center;
+}
+
+#botaoAvaliacao button{
+    
+    width: 4.0rem;
+    height: 4.0rem;
+    border-radius: 50%;
+    
+    background: var(--color-button-like);
+    /* border: 0; */
+}
+#botaoAvaliacao button img{
+    background-position: center;
+    width: 1.6rem;
+    height: 1.6rem;
+}
+
+
+.artigosGrid{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.item{
+    display: flex;
+    gap: 16px;
+    margin-bottom: 3.2rem;
+}
+
+footer{
+    
+    padding: 1.6rem;
+    
+    text-align: center;
+    
+    background-color: var(--color-background-footer);
+    color: var(--color-text-white);
+}
+
+@media(min-width: 1120px){
+    :root{
+        font-size: 62.5%;
+    }
+    
+    .page{
+        width: 144.4rem;
+        height: 100vh;
+        margin: 0; 
+    }
+
+    header{
+        width: 100%;
+        height: 7.2rem;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+
+    }
+    .logo > img{
+        margin-left: 11.2rem;
+        
+    }
+    #portrait{
+        margin-right: 11.2rem;
+    }
+
+    #menu{
+        /* width: 100vw; */
+        /* height: 4.8rem; */
+        display: flex;
+        align-items: center;
+        gap: 2.5rem;
+        /* color: var(--color-text-white); */
+    }
+    .input-wrapper input{
+        width: 100.8rem;   
+    }
+
+    .input-wrapper input::placeholder{
+        text-align: left;
+        color: var(--color-text-white);
+        font-size: 1.6rem;
+        
+    }
+
+    div #thumbnail{
+        margin-top: 4.4rem;
+        
+    }
+    
+    #thumbnail > img{
+        width: 80rem;
+        margin-top: 4.4rem;
+        display: flex;
+        border-radius: 5px;
+    }
+
+    #grupoBotoes{
+        display: flex;
+        gap: 34.6rem
+    }
+
+    main {
+        margin-top: 4.4rem;
+        margin-left: 10.9rem;   
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    section{
+        width: 80rem;
+    }
+
+    h2{
+        font-size: 2.4rem;
+    }
+
+    p{
+        font-size: 1.6rem;
+    }
+
+    
+
+    section > p{
+        width: 80rem;
+    }
+
+    #artigos{
+        margin-top: 4.4rem;
+        margin-left: 3.4rem;
+        
+        width: 38.4rem;
+    }
+
+    h3{
+        font-size: 1.8rem;
+    }
+
+    span{
+        font-size: 1.4rem;
+    }
+    
+    footer{
+        width: 100vw;
+    }
+}
