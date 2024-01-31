@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Focus Timer 2.0</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./src/main.js" defer type="module"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <div class="timerDisplay">
+                
+            <section id="timer" class="flex">
+                <span id="minutes">25</span>
+                <span>:</span>
+                <span id="seconds">00</span>
+            </section>
+
+            <div id="timerControls" class="flex">
+                <button data-action="toggleRunning" id="play"></button>
+                <button data-action="reset" id="stop"></button>
+                <button data-action="addTime" id="plus"></button>
+                <button data-action="removeTime" id="minus"></button>
+            </div>
+
+        </div>
+        
+        <div id="soundDisplay">
+            <button data-action="toggleMusicFlorest" id="florest"></button>
+            <button data-action="toggleMusicRain" id="rain"></button>
+            <button data-action="toggleMusicCoffee" id="coffee-shop"></button>
+            <button data-action="toggleMusicFire" id="fire"></button>
+        </div>
+    </main>
+    
+</body>
+</html>

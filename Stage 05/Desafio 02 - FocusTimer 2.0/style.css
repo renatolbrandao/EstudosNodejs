@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%;
+
+    --bg-color: #FFFF;
+    --text-color: #323238;
+    --bg-buttonSelected: #02799D;
+    --bg-buttonUnSelected: #e1e1e6;
+
+    --icon-buttonPlay: url('./assets/play.svg');
+    --icon-buttonStop: url('./assets/stop.svg');
+    --icon-buttonPlus: url('./assets/+.svg');
+    --icon-buttonMinus: url('./assets/-.svg');
+    
+    --icon-buttonFlorest: url('./assets/floresta.svg');
+    --icon-buttonFlorestBranco: url('./assets/iconeArvoreBranco.svg');
+    --icon-buttonRain: url('./assets/chuva.svg');
+    --icon-buttonRainPreto: url('./assets/iconeChuvaPreto.svg');
+    --icon-buttonCoffee: url('./assets/cafeteria.svg');
+    --icon-buttonCoffeeBranco: url('./assets/iconeCafeteriaBranco.svg');
+    --icon-buttonFire: url('./assets/lareira.svg');
+    --icon-buttonFireBranco: url('./assets/iconeLareiraBranco.svg');
+    
+
+}
+
+body{
+    background: #FFF;
+    display: grid;
+    justify-items: center;
+    padding: 19.6rem 22.6rem 18.8rem 23.3rem;
+}
+
+main{
+    display: grid;
+    grid-template-columns: repeat(2, 60rem);
+    align-items: center;
+    justify-items: center;
+    
+}
+.flex{
+    display: flex;
+}
+.timerDisplay{    
+    display: grid;
+    place-content:initial;
+
+}
+
+#timer{
+    font-family: 'Roboto';
+    font-size: 12rem;
+    font-weight: 500;
+    padding: 0.2rem;
+    line-height: normal;
+
+    margin-bottom: 4.8rem;
+}
+
+#timerControls{
+    display: inline-flex;
+    gap: 4rem;
+}
+
+#timerControls button{
+    border: none;
+}
+
+#play, #stop, #plus, #minus{
+    border-radius: 999px;
+    background-color: transparent;
+    width: 4.8rem;
+    height: 4.8rem;
+}
+
+#play{
+    background-image: var(--icon-buttonPlay);
+}
+
+#stop{
+    background-image: var(--icon-buttonStop);
+}
+
+#plus{
+    background-image: var(--icon-buttonPlus);
+}
+
+#minus{
+    background-image: var(--icon-buttonMinus);
+}
+
+#soundDisplay{
+    display: grid;
+    grid-template-columns: repeat(2, 13.8rem);
+    gap: 3.2rem;
+}
+
+#soundDisplay button{
+    width: 13.8rem;
+    height: 15.2rem;
+    border: none;
+    border-radius: 2.4rem;
+}
+
+#florest, #rain, #coffee-shop, #fire{
+    background-color: var(--bg-buttonUnSelected);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#florest:hover, #rain:hover, #coffee-shop:hover, #fire:hover{
+    background-color: var(--bg-buttonSelected);
+}
+
+#florest:focus, #rain:focus, #coffee-shop:focus, #fire:focus{
+    background-color: var(--bg-buttonSelected);
+}
+
+#florest{
+    background-image: var(--icon-buttonFlorest);
+}
+
+#florest:hover{
+    background-image: var(--icon-buttonFlorestBranco);
+}
+
+#florest:focus{
+    background-image: var(--icon-buttonFlorestBranco);
+}
+
+#rain{
+    background-image: var(--icon-buttonRainPreto);
+}
+
+#rain:hover{
+    background-image: var(--icon-buttonRain);
+}
+
+#rain:focus{
+    background-image: var(--icon-buttonRain);
+}
+
+#coffee-shop{
+    background-image: var(--icon-buttonCoffee);
+}
+
+#coffee-shop:hover{
+    background-image: var(--icon-buttonCoffeeBranco);
+}
+
+#coffee-shop:focus{
+    background-image: var(--icon-buttonCoffeeBranco);
+}
+
+#fire{
+    background-image: var(--icon-buttonFire);
+}
+
+#fire:hover{
+    background-image: var(--icon-buttonFireBranco);
+}
+
+#fire:focus{
+    background-image: var(--icon-buttonFireBranco);
+}
